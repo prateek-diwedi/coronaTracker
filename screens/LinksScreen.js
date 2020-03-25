@@ -9,22 +9,17 @@ export default function LinksScreen() {
     <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
       <OptionButton
         icon="md-school"
-        label="Read the Expo documentation"
-        onPress={() => WebBrowser.openBrowserAsync('https://docs.expo.io')}
+        label="WHO Website"
+        onPress={() => WebBrowser.openBrowserAsync('https://www.who.int/health-topics/coronavirus#tab=tab_1')}
       />
 
       <OptionButton
         icon="md-compass"
-        label="Read the React Navigation documentation"
-        onPress={() => WebBrowser.openBrowserAsync('https://reactnavigation.org')}
+        label="Latest News on the virus "
+        onPress={() => WebBrowser.openBrowserAsync('https://news.google.com/topics/CAAqBwgKMMqAmAsw9KmvAw?hl=en-IN&gl=IN&ceid=IN%3Aen')}
       />
 
-      <OptionButton
-        icon="ios-chatboxes"
-        label="Ask a question on the forums"
-        onPress={() => WebBrowser.openBrowserAsync('https://forums.expo.io')}
-        isLastOption
-      />
+      
     </ScrollView>
   );
 }

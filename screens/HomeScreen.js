@@ -25,7 +25,7 @@ constructor(props) {
   };
 }
 getDateNow(datems){
-  var date = new Date();
+  var date = new Date(datems);
   return date.toString();
 }
 componentDidMount= async()=>{
